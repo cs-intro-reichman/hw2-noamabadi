@@ -5,16 +5,17 @@ public  class  TestRandom {
 		int greaterThanHalf = 0;
 		int lessThanOrEqualHalf = 0;
 
-		for (int i = 0; i< N; i++); {
+		for (int i = 0; i < N; i++); {
 			double random = Math.random();
 			if (random > 0.5) {
-				greaterThanHalf = greaterThanHalf + 1; }
-				 else { lessThanOrEqualHalf = lessThanOrEqualHalf + 1; }	}
+				greaterThanHalf++; }
+				 else { lessThanOrEqualHalf++; }	}
         System.out.println( "> 0.5: " + greaterThanHalf + " times");
 		System.out.println( "<= 0.5: " + lessThanOrEqualHalf + " times");
 
 		if (lessThanOrEqualHalf !=0) { 
-			System.out.println("Ratio: " + (double) greaterThanHalf / lessThanOrEqualHalf);
+		double ratio = (double) greaterThanHalf / lessThanOrEqualHalf;
+		System.out.println( "Ratio: " + ratio);
 			
 		}
 
