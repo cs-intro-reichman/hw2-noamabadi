@@ -10,8 +10,8 @@ public  class  TestRandom {
 			if (random > 0.5) {
 				greaterThanHalf = greaterThanHalf + 1; }
 				 else { lessThanOrEqualHalf = lessThanOrEqualHalf + 1; }	}
-        System.out.println( "> 0.5 " + greaterThanHalf + " times");
-		System.out.println( "<= 0.5 " + lessThanOrEqualHalf + " times");
+        System.out.println( "> 0.5: " + greaterThanHalf + " times");
+		System.out.println( "<= 0.5: " + lessThanOrEqualHalf + " times");
 
 		if (lessThanOrEqualHalf !=0) { 
 			System.out.println("Ratio: " + (double) greaterThanHalf / lessThanOrEqualHalf);
