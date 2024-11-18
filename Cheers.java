@@ -1,22 +1,19 @@
 // Prints a crowd cheering output.
 public class Cheers {
         public static void main(String[] args) {
-	String cheer = args[0];
-        cheer = cheer.toUpperCase();
-        String anLetters = "AEFHILMNORSX";
+        String input = args[0].toUpperCase();
+        int repeat = Integer.parseInt(args[1]);
 
-        for (int i = 0; i < cheer.length(); i++){
-            char c = cheer.charAt(i);
-             if (anLetters.indexOf(c) != -1) {
-                System.out.println("Give me an " + c + ": " + c + "!");  }
-             else { System.out.println("Give me a " + c + ": " + c + "!");} 
-          } 
-        System.out.println("What" + " does" + " that" + " spell? ");
+        String vowels = "AEFHILMNORSX";
+        int i = 0;
+        for (i = 0; i < input.length(); i++){
+        char letter = input.charAt(i);
+        String b = vowels.indexOf(letter) != -1 ? "an" :"a "; 
+        System.out.println( "Give me " + b + " " + letter + ": " + letter + "!");
 
-        int number = Integer.parseInt(args[1]);
-
-        for (int count = 0; count < number; count++) {
-                System.out.println(cheer + "!!!");
         }
-        }
-}
+        System.out.println( "What does that spell?");
+
+        for (i = 0; i < repeat; i++){
+                System.out.println(input + "!!!");
+        }  } }       
