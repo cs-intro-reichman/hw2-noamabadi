@@ -4,7 +4,7 @@ public class Collatz {
 	    int N = Integer.parseInt(args[0]);
 		String mood = (args[1]);
 		boolean firstTime = true;
-		if (mood.equals(anObject:"V")) {
+		if (mood.equals("V")) {
 		for (int i =1; i<= N; i++) {
 			int s = i;
 			int sum = 1;
